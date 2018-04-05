@@ -9,6 +9,11 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class DiscovrManualFunctions {
 	
+	/**
+	 * @param driver
+	 * @throws InterruptedException
+	 * Manual Functions Module inside Discover Menu.
+	 */
 	public static void manualFunctions(WebDriver driver) throws InterruptedException {
 			// searching for Discover 
 			driver.findElement(By.linkText("Discover")).click();
@@ -58,7 +63,7 @@ public class DiscovrManualFunctions {
 					driver.findElement(By.xpath("//*[@id=\"app\"]/app-manual-function[1]/form/div/div[2]/button")).click();
 					Thread.sleep(10000);// to check status completed
 					//wait untill completed
-//					WebDriverWait wait = new WebDriverWait(driver, 30);
+                //					WebDriverWait wait = new WebDriverWait(driver, 30);
 //					WebElement wb = driver.findElement(By.xpath("//*[@id=\"app\"]/app-manual-function[1]/form/div/div[3]"));
 //					wait.until(ExpectedConditions.attributeContains(wb, "text", "Completed"));
 					

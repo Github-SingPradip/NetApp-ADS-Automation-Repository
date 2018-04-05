@@ -12,7 +12,7 @@ public class InvalidScenario {
 	/**
 	 * @param driver
 	 * @throws InterruptedException
-	 * Without no data in create user page
+	 * ValidationWith no data in create user page
 	 */
 	public static void WithoutValues(WebDriver driver) throws InterruptedException {
 		

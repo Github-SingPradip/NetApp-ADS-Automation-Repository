@@ -16,6 +16,21 @@ import com.paragon.netapp.projectUtils.DatabaseManager;
 
 public class NativeUser {
 	
+	/**
+	 * @param driver
+	 * @param username
+	 * @param firstname
+	 * @param lastname
+	 * @param password
+	 * @param confirmpassword
+	 * @param email
+	 * @param role
+	 * @param enabled
+	 * @throws Exception
+	 * 
+	 * Method for Creating a new User in Admin User management using excel utility Test data.
+	 * Verifying in DB with each record added.
+	 */
 	public static void newUserCreation(WebDriver driver, String username, String firstname, String lastname,
 			String password, String confirmpassword, String email, String role, String enabled) throws Exception {
 

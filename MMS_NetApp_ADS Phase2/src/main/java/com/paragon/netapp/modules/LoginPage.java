@@ -6,6 +6,14 @@ import org.openqa.selenium.WebDriver;
 public class LoginPage
 
 {
+	/**
+	 * @param driver
+	 * @param username
+	 * @param password
+	 * @return
+	 * @throws InterruptedException
+	 * Method to Login to Application with Valid and Invalid test data credentials.
+	 */
 	public static String loginToApp(WebDriver driver, String username, String password) throws InterruptedException {
 		driver.findElement(By.name("username")).clear();
 		driver.findElement(By.name("username")).sendKeys(username);

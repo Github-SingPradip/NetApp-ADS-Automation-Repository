@@ -9,6 +9,12 @@ import java.util.Properties;
 
 public class ProjectUtility
 {
+	/**
+	 * @param key
+	 * @return
+	 * Get the data from Property File attached with Projecta
+	 * 
+	 */
 	public static String getProperty(String key)
 	{
 		String value="";

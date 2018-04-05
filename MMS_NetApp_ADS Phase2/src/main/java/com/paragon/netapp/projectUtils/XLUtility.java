@@ -12,6 +12,13 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class XLUtility {
+	/**
+	 * @param sheetname
+	 * @param filename
+	 * @return
+	 * @throws Exception
+	 * @Get the data from XL Utility to run regression testing with ready test data.
+	 */
 	@SuppressWarnings({ "deprecation", "null" })
 	public static String[][] getData(String sheetname, String filename) throws Exception
 	// public static void main(String args[]) throws Exception

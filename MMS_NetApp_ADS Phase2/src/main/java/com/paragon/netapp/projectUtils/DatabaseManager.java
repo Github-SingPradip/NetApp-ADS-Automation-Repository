@@ -12,6 +12,11 @@ public class DatabaseManager
 	public static Connection conn;
 	
 	
+	/**
+	 * @return
+	 * @throws Exception
+	 * Method to make a com=nnection getConnection to Maria DB
+	 */
 	public static Connection getConnection() throws Exception
 	{
 		String DBurl=ProjectUtility.getProperty("DBNAME");
@@ -26,6 +31,12 @@ public class DatabaseManager
 		return conn;
 	}
 	
+	/**
+	 * @param userName
+	 * @return
+	 * @throws Exception
+	 * Verify User In database.
+	 */
 	public static ResultSet verifyUserinDB(String userName) throws Exception
 	{
 		ResultSet rs=DatabaseManager.getUserInfo(userName);
@@ -33,6 +44,12 @@ public class DatabaseManager
 	}
 	
 
+	/**
+	 * @param username
+	 * @return
+	 * @throws Exception
+	 * SQL Query to validate in Database for User created in Admin Module.
+	 */
 	public static ResultSet getUserInfo(String username) throws Exception
 	{
 		String sql="select user_name,first_name,last_name,email, case "
@@ -52,6 +69,5 @@ public class DatabaseManager
 		ResultSet rs=st.executeQuery();
 		
 		return rs;
-	
 	}
 }

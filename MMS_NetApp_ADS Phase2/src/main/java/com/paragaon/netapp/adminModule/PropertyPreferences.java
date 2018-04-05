@@ -6,6 +6,11 @@ import org.openqa.selenium.support.ui.Select;
 
 public class PropertyPreferences {
 	
+	/**
+	 * @param driver
+	 * @throws InterruptedException
+	 * Property Preferences functionality in Admin Module
+	 */
 	public static void PropertyPref(WebDriver driver) throws InterruptedException {
 		
 	

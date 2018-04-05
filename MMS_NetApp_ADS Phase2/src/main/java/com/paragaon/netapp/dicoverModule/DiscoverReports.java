@@ -28,6 +28,11 @@ public class DiscoverReports {
 		
 	}
 	// Callme Report Test
+	/**
+	 * @param driver
+	 * @throws InterruptedException
+	 * @Method to Handle Call Me Report module regression testing.
+	 */
 	public void callMeReport(WebDriver driver) throws InterruptedException {
 		System.out.println("Call me report is called ");
 		Thread.sleep(10000);
@@ -56,6 +61,11 @@ public class DiscoverReports {
 	
 	
 	// UnknownOwnerReport Test
+	/**
+	 * @param driver
+	 * @throws InterruptedException
+	 * @Method to Handle unknownOwnerReport Report module regression testing.
+	 */
 	public void unknownOwnerReport(WebDriver driver) throws InterruptedException{
 		System.out.println("Unknown Owner report is called ");
 		Thread.sleep(5000);
@@ -84,6 +94,12 @@ public class DiscoverReports {
 	
 	
 	//Voulume DecomissionReport Test
+	/**
+	 * @param driver
+	 * @throws InterruptedException
+	 * @Method to Handle unknownOwnerReport Report module regression testing.
+	 * 
+	 */
 	public void volumeDecommision(WebDriver driver ) throws InterruptedException {
 		System.out.println("Voulme Decommision report is called ");
 		Thread.sleep(5000);
@@ -112,6 +128,11 @@ public class DiscoverReports {
 	}
 	
 	// Multiowner report test
+	/**
+	 * @param driver
+	 * @throws InterruptedException
+	 * @Method to Handle multiOwner Report module regression testing.
+	 */
 	public void multiOwner(WebDriver driver) throws InterruptedException {
 		System.out.println("MultiOwner report is called ");
 		Thread.sleep(5000);
@@ -139,6 +160,11 @@ public class DiscoverReports {
 	}
 	
 	// Activity report test
+	/**
+	 * @param driver
+	 * @throws InterruptedException
+	 * @Method to Handle activityReport Report module regression testing.
+	 */
 	public void activityReport(WebDriver driver) throws InterruptedException {
 		System.out.println("Activity report is called ");
 		Thread.sleep(5000);
@@ -167,6 +193,12 @@ public class DiscoverReports {
 	
 	// Application detail report
 	
+	/**
+	 * @param driver
+	 * @throws InterruptedException
+	 * @Method to Handle applicationDetail Report module regression testing.
+
+	 */
 	public void applicationDetail(WebDriver driver) throws InterruptedException {
 		System.out.println("Application Detail report is called ");
 		Thread.sleep(5000);
@@ -192,7 +224,13 @@ public class DiscoverReports {
 		driver.findElement(By.xpath("//button[@class='btn btn-outline-secondary pull-left']")).click();
 		
 	}
-	/* Check the file from a specific directory with extension */
+	
+	/**
+	 * @param dirPath
+	 * @param ext
+	 * @return
+	 * Check the file from a specific directory with extension
+	 */
 	private boolean isFileDownloaded_Ext(String dirPath, String ext){
 		boolean flag=false;
 	    File dir = new File(dirPath);
@@ -209,7 +247,13 @@ public class DiscoverReports {
 	    return flag;
 	}
 	
-	/* Get the latest file from a specific directory*/
+	
+	
+	/**
+	 * @param dirPath
+	 * @return
+	 * Get the latest file from a specific directory (getLatestFilefromDir)
+	 */
 	private File getLatestFilefromDir(String dirPath){
 	    File dir = new File(dirPath);
 	    File[] files = dir.listFiles();

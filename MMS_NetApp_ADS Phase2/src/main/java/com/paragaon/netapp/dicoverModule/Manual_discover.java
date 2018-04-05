@@ -18,6 +18,15 @@ import org.openqa.selenium.support.ui.Select;
 
 public class Manual_discover {
 
+	/**
+	 * @param driver
+	 * @param Workpack
+	 * @param SourceController
+	 * @param Assettag
+	 * @param InstallDate
+	 * @throws InterruptedException
+	 * Method to handle Controller WorkPackage in Discover Module....
+	 */
 	public static void Workpack(WebDriver driver, String Workpack, String SourceController, String Assettag,
 			String InstallDate) throws InterruptedException {
 

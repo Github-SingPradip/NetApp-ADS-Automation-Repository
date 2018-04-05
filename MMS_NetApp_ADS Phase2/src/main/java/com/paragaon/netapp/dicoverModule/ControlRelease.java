@@ -9,6 +9,13 @@ import org.openqa.selenium.WebElement;
 
 public class ControlRelease {
 
+	/**
+	 * @param driver
+	 * @param SourceController
+	 * @throws InterruptedException
+	 * @author Singprad: Method to handle create Controller WorkPackage functionality from Discover Module.
+	 * 
+	 */
 	public static void ControlBatch(WebDriver driver, String SourceController) throws InterruptedException {
 		Thread.sleep(2000);
 		driver.findElement(By.linkText("Discover")).click();
@@ -32,6 +39,13 @@ public class ControlRelease {
 
 	}
 
+	/**
+	 * @param driver
+	 * @param SourceController
+	 * @throws InterruptedException
+	 * @author Singprad: Method to handle Delete Controller Release functionality from Discover Module.
+	 * 
+	 */
 	public static void DeleteRelease(WebDriver driver, String SourceController) throws InterruptedException {
 
 		driver.findElement(By.linkText("Discover")).click();

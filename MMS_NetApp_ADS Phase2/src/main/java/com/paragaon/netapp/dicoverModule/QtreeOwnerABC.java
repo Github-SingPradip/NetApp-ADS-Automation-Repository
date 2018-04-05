@@ -10,7 +10,12 @@ public class QtreeOwnerABC {
 	
 	
 
-	       public static void QtreeOwnerKeyABC(WebDriver driver) throws InterruptedException {
+	       /**
+	     * @param driver
+	     * @throws InterruptedException
+	     * Methode to handle Qtree Owner Key ABC in Discover Module.
+	     */
+	    public static void QtreeOwnerKeyABC(WebDriver driver) throws InterruptedException {
 
 	              Thread.sleep(5000);
 	              driver.findElement(By.xpath(".//*[@id='discoverDropdown']")).click();

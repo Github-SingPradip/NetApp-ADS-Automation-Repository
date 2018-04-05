@@ -6,6 +6,11 @@ import org.openqa.selenium.WebElement;
 
 public class ManualFunctions {
 	
+	/**
+	 * @param driver
+	 * @throws InterruptedException
+	 * Manual Function Functionality module.....
+	 */
 	public static void ManualAdmin(WebDriver driver) throws InterruptedException {
 		
         driver.findElement(By.xpath(".//*[@id='adminDropdown']")).click();
