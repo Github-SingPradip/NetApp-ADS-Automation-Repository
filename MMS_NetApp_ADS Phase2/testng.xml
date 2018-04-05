@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<test thread-count="5" name="Test">
+		<classes>
+
+			<!-- Test Case for Login to the application -->
+			<class name="com.paragon.netapp.tests.loginTest">
+				<methods>
+					<include name="TestCase01"></include>
+				</methods>
+			</class>
+
+
+			<class name="com.paragon.netapp.tests.DiscoverTest">
+				<methods>
+					<include name="discoverModule"></include>
+					<include name="Control"></include>
+					<include name="DeleteWorkpack"></include>
+					<include name="discoverManual"></include>
+
+				</methods>
+			</class>
+
+
+			<!-- Test Case to createUser/DeleteUser in Admin module -->
+
+			<!-- <class name="com.paragon.netapp.tests.NativeTest"> <methods> <include 
+				name="userTest"></include> <exclude name="deleteTest"></exclude> </methods> 
+				</class> -->
+
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
