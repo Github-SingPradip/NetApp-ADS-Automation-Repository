@@ -9,10 +9,23 @@ import com.paragon.netapp.projectUtils.XLUtility;
 
 public class NativeTest extends BaseTest {
 
+	/**
+	 * @param username
+	 * @param firstname
+	 * @param lastname
+	 * @param password
+	 * @param confirmpassword
+	 * @param email
+	 * @param role
+	 * @param enabled
+	 * @throws Exception
+	 *             Methods Called here for User Creation
+	 * 
+	 */
 	@Test(dataProvider = "TestUserScenarios")
 	public void userTest(String username, String firstname, String lastname, String password, String confirmpassword,
 			String email, String role, String enabled) throws Exception {
-		
+
 		NativeUser.newUserCreation(driver, username, firstname, lastname, password, confirmpassword, email, role,
 				enabled);
 
@@ -24,6 +37,11 @@ public class NativeTest extends BaseTest {
 		return data;
 	}
 
+	/**
+	 * @param changename
+	 * @throws Exception
+	 *             To Edit the User Details.
+	 */
 	@Test(dataProvider = "EditData")
 	public void editTest(String changename) throws Exception {
 		Thread.sleep(5000);
@@ -32,6 +50,11 @@ public class NativeTest extends BaseTest {
 
 	}
 
+	/**
+	 * @param changename
+	 * @throws Exception
+	 *             * To change the Password
+	 */
 	@Test(dataProvider = "EditData")
 	public void passwordTest(String changename) throws Exception {
 		Thread.sleep(5000);
@@ -40,6 +63,11 @@ public class NativeTest extends BaseTest {
 
 	}
 
+	/**
+	 * @param changename
+	 * @throws Exception
+	 *             To Delete specified user.
+	 */
 	@Test(dataProvider = "EditData", priority = 3)
 	public void deleteTest(String changename) throws Exception {
 		Thread.sleep(5000);

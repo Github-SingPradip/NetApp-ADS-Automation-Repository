@@ -13,6 +13,10 @@ import com.paragon.netapp.modules.LoginPage;
 import com.paragon.netapp.projectUtils.XLUtility;
 import com.paragaon.netapp.dicoverModule.*;
 
+/**
+ * @author Singprad
+ * To validate Discover Controller Release and Controller WorkPackage.
+ */
 public class DiscoverTest extends BaseTest {
 
 	@Test(dataProvider = "ControllerWorkPackage", priority = 2)
